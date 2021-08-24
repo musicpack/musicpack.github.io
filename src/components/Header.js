@@ -5,6 +5,8 @@ import {
   NavLink,
   MenuList,
   HomeIcon,
+  NavButton,
+  Button,
 } from "./styles/HeaderStyle"
 import { headerData } from "../data/headerData"
 
@@ -23,6 +25,9 @@ const Header = () => {
             </NavLink>
           ))}
         </MenuList>
+        <NavButton>
+          <Button>Start Music Box</Button>
+        </NavButton>
       </Nav>
     </>
   )
