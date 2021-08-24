@@ -1,7 +1,15 @@
 import React from "react"
+import Header from "./Header"
+import GlobalStyles from "./styles/GlobalStyles"
 
 const AppLayout = ({ children }) => {
-  return <div></div>
+  return (
+    <>
+      <GlobalStyles />
+      <Header />
+      <main>{children}</main>
+    </>
+  )
 }
 
 export default AppLayout

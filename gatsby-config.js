@@ -11,5 +11,12 @@ module.exports = {
     // siteUrl: `https://www.gatsbyjs.com`,
     description: `Website for Discord Music bot that lets you control your music with GUI`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+  ],
 }
