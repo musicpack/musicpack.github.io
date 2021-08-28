@@ -3,19 +3,20 @@ import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
 
 export const Nav = styled.nav`
-  background: #3d3d3d;
+  background: #151822;
   height: 100px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
   z-index: 100;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 `
 
 export const HomeIcon = styled.div`
   font-size: 1.3rem;
   transform: translate(0, -5%);
+  margin-left: 10px;
 `
 
 export const NavLink = styled(Link)`
@@ -55,6 +56,7 @@ export const MenuList = styled.div`
 export const NavButton = styled.div`
   display: flex;
   align-items: center;
+  margin-right: 15px;
 
   @media screen and (max-width: 1023px) {
     display: none;
@@ -62,7 +64,7 @@ export const NavButton = styled.div`
 `
 
 export const Button = styled(Link)`
-  background: #7289da;
+  background: #6479c2;
   color: #fff;
   white-space: nowrap;
   padding: 12px 32px;

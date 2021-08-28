@@ -1,12 +1,13 @@
 import React from "react"
 import AppLayout from "../components/AppLayout"
+import HomeIntro from "../components/HomeIntro"
+import { introData1 } from "../data/IntroData"
 
 const Home = () => {
   return (
     <div>
       <AppLayout>
-        <h1>Home</h1>
-        <a href="https://github.com/mbox-contributors/mbox">Learn more</a>
+        <HomeIntro {...introData1} />
       </AppLayout>
     </div>
   )
