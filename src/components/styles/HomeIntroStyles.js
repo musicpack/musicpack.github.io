@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import * as variables from "./Variables"
 
 export const IntroContainer = styled.div`
   color: #fff;
-  background: #151822;
+  background: ${variables.BG_COLOR};
 
   @media screen and (max-width: 1023px) {
     padding: 100px 0;
@@ -84,13 +85,15 @@ export const Button = styled.button`
   text-decoration: none;
   border-radius: 4px;
   border: ${({ primary }) => (primary ? "none" : "1px solid #fff")};
-  background: ${({ primary }) => (primary ? "#6479c2" : "#151822")};
+  background: ${({ primary }) =>
+    primary ? variables.PRIMARY_COLOR : variables.BG_COLOR};
   display: inline-block;
   font-weight: 600;
   transition: all 0.3s;
 
   &:hover {
-    background: ${({ primary }) => (primary ? "#7289dab7" : "#fff")};
-    color: ${({ primary }) => (primary ? "##fff" : "#151822")};
+    background: ${({ primary }) =>
+      primary ? variables.PRIMARY_COLOR_DARKER : "#fff"};
+    color: ${({ primary }) => (primary ? "##fff" : variables.BG_COLOR)};
   }
 `

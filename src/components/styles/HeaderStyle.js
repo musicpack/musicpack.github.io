@@ -2,8 +2,10 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
 
+import * as variables from "./Variables"
+
 export const Nav = styled.nav`
-  background: #151822;
+  background: ${variables.BG_COLOR};
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -64,7 +66,7 @@ export const NavButton = styled.div`
 `
 
 export const Button = styled(Link)`
-  background: #6479c2;
+  background: ${variables.PRIMARY_COLOR};
   color: #fff;
   white-space: nowrap;
   padding: 12px 32px;
