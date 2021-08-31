@@ -14,11 +14,18 @@ export const Nav = styled.nav`
   z-index: 100;
   /* border: 1px solid black; */
 `
+export const NavLogo = styled.img`
+  width: 52px;
+  height: 52px;
+  margin: 5px;
+  transform: translate(0, -5%);
+`
 
 export const HomeIcon = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   transform: translate(0, -5%);
   margin-left: 10px;
+  font-weight: 600;
 `
 
 export const NavLink = styled(Link)`
