@@ -6,6 +6,12 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
+        /* disable text selection highliting */
+        &::selection{
+            background: none;
+            color: none;
+        }
     } 
 `
 
