@@ -12,6 +12,8 @@ import {
   ImgContainer,
   IntroContainer,
   Button,
+  Lists,
+  ListIcon,
 } from "./styles/HomeIntroStyles"
 
 // import demoGIF from "../images/mboxdomo.gif"
@@ -35,7 +37,12 @@ const HomeIntro = ({
       )
     } else {
       return details.map(item => {
-        return <li>{item}</li>
+        return (
+          <Lists>
+            <ListIcon />
+            {item}
+          </Lists>
+        )
       })
     }
   }

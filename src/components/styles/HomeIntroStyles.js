@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import * as variables from "./Variables"
+import { FcMusic } from "react-icons/fc"
 
 export const IntroContainer = styled.div`
   color: #fff;
@@ -51,7 +52,7 @@ export const IntroHeading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 700 !important;
   color: #fff;
 
   @media screen and (max-width: 560px) {
@@ -61,7 +62,7 @@ export const IntroHeading = styled.h1`
 export const Description = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   color: #fff;
 `
@@ -98,4 +99,18 @@ export const Button = styled.button`
       primary ? variables.PRIMARY_COLOR_DARKER : "#fff"};
     color: ${({ primary }) => (primary ? "##fff" : variables.BG_COLOR)};
   }
+`
+export const Lists = styled.li`
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+`
+export const ListIcon = styled(FcMusic)`
+  margin-right: 7px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  /* background-color: #add9eb;
+  border: 1px solid #a9aaaa;
+  border-radius: 100%; */
+  transform: translateY(63%);
 `
