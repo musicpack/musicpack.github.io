@@ -73,7 +73,9 @@ export const ImgContainer = styled.div`
   max-width: 600px;
   height: 100%;
 `
-export const Img = styled.img``
+export const Img = styled.img`
+  width: 100%;
+`
 
 export const Button = styled.button`
   width: 150px;

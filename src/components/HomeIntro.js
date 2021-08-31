@@ -14,9 +14,31 @@ import {
   Button,
 } from "./styles/HomeIntroStyles"
 
-import demoGIF from "../images/mboxdomo.gif"
+// import demoGIF from "../images/mboxdomo.gif"
 
-const HomeIntro = ({ imgStart, heading, description }) => {
+const HomeIntro = ({
+  id,
+  imgStart,
+  heading,
+  description,
+  img,
+  style,
+  details,
+}) => {
+  const ContentDecider = () => {
+    if (id === "intro1") {
+      return (
+        <ButtonContainer>
+          <Button>Learn More</Button>
+          <Button primary="true">Add to Discord</Button>
+        </ButtonContainer>
+      )
+    } else {
+      return details.map(item => {
+        return <li>{item}</li>
+      })
+    }
+  }
   return (
     <>
       <IntroContainer>
@@ -26,26 +48,13 @@ const HomeIntro = ({ imgStart, heading, description }) => {
               <TextWrapper>
                 <IntroHeading>{heading}</IntroHeading>
                 <Description>{description}</Description>
-                <ButtonContainer>
-                  <Button>Learn More</Button>
-                  <Button primary="true">Add to Discord</Button>
-                </ButtonContainer>
+                <ContentDecider />
               </TextWrapper>
             </Col1>
 
             <Col2>
               <ImgContainer>
-                <Img
-                  src={demoGIF}
-                  alt="demoGif"
-                  style={{
-                    width: "100%",
-                    margin: "auto",
-                    boxSizing: "border-box",
-                    border: "8px solid #1f2331",
-                    borderRadius: "30px",
-                  }}
-                />
+                <Img src={img} alt="demoGif" style={style} />
               </ImgContainer>
             </Col2>
           </Row>
