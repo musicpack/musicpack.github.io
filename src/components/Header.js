@@ -12,7 +12,7 @@ import {
 import { headerData } from "../data/headerData"
 import mboxlogo from "../images/MusicBoxIcon.png"
 
-const Header = () => {
+const Header = ({ sidebarToggle }) => {
   return (
     <>
       <Nav>
@@ -20,7 +20,7 @@ const Header = () => {
           <NavLogo src={mboxlogo} />
           <HomeIcon>Music Box</HomeIcon>
         </NavLink>
-        <MenuBars />
+        <MenuBars onClick={sidebarToggle} />
         <MenuList>
           {headerData.map((item, i) => (
             <NavLink to={item.link} key={i}>

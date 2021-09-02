@@ -93,6 +93,7 @@ export const Button = styled.button`
   display: inline-block;
   font-weight: 600;
   transition: all 0.3s;
+  cursor: pointer;
 
   &:hover {
     background: ${({ primary }) =>

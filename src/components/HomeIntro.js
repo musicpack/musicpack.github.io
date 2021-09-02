@@ -36,9 +36,9 @@ const HomeIntro = ({
         </ButtonContainer>
       )
     } else {
-      return details.map(item => {
+      return details.map((item, index) => {
         return (
-          <Lists>
+          <Lists key={index}>
             <ListIcon />
             {item}
           </Lists>
