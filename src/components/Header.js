@@ -16,7 +16,7 @@ const Header = ({ sidebarToggle }) => {
   return (
     <>
       <Nav>
-        <NavLink to="/">
+        <NavLink to="/" isLogo={true}>
           <NavLogo src={mboxlogo} />
           <HomeIcon>Music Box</HomeIcon>
         </NavLink>

@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaBars } from "react-icons/fa"
-
 import * as variables from "./Variables"
 
 export const Nav = styled.nav`
@@ -36,6 +35,12 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s;
+
+  /* hover effect except home logo */
+  &:hover {
+    color: ${({ isLogo }) => (isLogo ? "#fff" : "#6479c2")};
+  }
 `
 
 export const MenuBars = styled(FaBars)`
