@@ -16,15 +16,13 @@ import {
   ListIcon,
 } from "./styles/HomeIntroStyles"
 
-// import demoGIF from "../images/mboxdomo.gif"
-
 const HomeIntro = ({
   id,
   imgStart,
   heading,
   description,
   img,
-  style,
+  imgStyle,
   details,
 }) => {
   const ContentDecider = () => {
@@ -61,7 +59,7 @@ const HomeIntro = ({
 
             <Col2>
               <ImgContainer>
-                <Img src={img} alt="demoGif" style={style} />
+                <Img src={img} alt="demoGif" style={imgStyle} />
               </ImgContainer>
             </Col2>
           </Row>

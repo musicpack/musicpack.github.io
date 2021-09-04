@@ -1,6 +1,6 @@
-import listening from "../images/listening.svg"
 import demoGIF from "../images/mboxdomo.gif"
-import typing from "../images/typing.svg"
+import commandChannel from "../../static/CommandChannel.png"
+import slashCommands from "../../static/SlashCommands.png"
 
 export const introData1 = {
   id: "intro1",
@@ -9,7 +9,7 @@ export const introData1 = {
     "A open source Discord Bot that lets you control your music with buttons and windows, not commands and messages.",
   img: demoGIF,
   imgStart: false,
-  style: {
+  imgStyle: {
     width: "100%",
     margin: "auto",
     boxSizing: "border-box",
@@ -30,9 +30,15 @@ export const introData2 = {
     "Control your music with buttons.",
     "Auto updating embed showing where in the timeline of the song you are at.",
   ],
-  img: listening,
+  img: commandChannel,
   imgStart: true,
-  style: {},
+  imgStyle: {
+    width: "100%",
+    margin: "auto",
+    boxSizing: "border-box",
+    border: "3px solid #1f2331",
+    borderRadius: "20px",
+  },
 }
 
 export const introData3 = {
@@ -44,7 +50,13 @@ export const introData3 = {
     "No more prefixes to remember. Type / to get a list of commands.",
     "/info command shows a auto updating embed, with all the same features from the command channel, including lyrics, queue, and timeline.",
   ],
-  img: typing,
+  img: slashCommands,
   imgStart: false,
-  style: {},
+  imgStyle: {
+    width: "100%",
+    margin: "auto",
+    boxSizing: "border-box",
+    border: "3px solid #1f2331",
+    borderRadius: "20px",
+  },
 }

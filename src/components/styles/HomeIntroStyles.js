@@ -14,7 +14,7 @@ export const IntroWrapper = styled.div`
   display: grid;
   justify-content: center;
   width: 100%;
-  height: 860px;
+  height: 770px;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
@@ -25,6 +25,7 @@ export const Row = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
+  grid-gap: 35px;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 
