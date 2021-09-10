@@ -10,7 +10,7 @@ This website is built using [Gatsby](https://www.gatsbyjs.org/).
 1. Clone the repository
    
    ```shell
-   git clone https://github.com/musicpack/mbox-contributors.github.io.git
+   git clone https://github.com/musicpack/musicpack.github.io.git
    cd musicpack.github.io
    ```
 
