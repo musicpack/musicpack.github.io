@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmusic_box_website=self.webpackChunkmusic_box_website||[]).push([[994],{4805:function(t,e,n){n.d(e,{Qxr:function(){return i}});var c=n(1046);function i(t){return(0,c.w_)({tag:"svg",attr:{version:"1",viewBox:"0 0 48 48",enableBackground:"new 0 0 48 48"},child:[{tag:"g",attr:{fill:"#E91E63"},child:[{tag:"circle",attr:{cx:"19",cy:"33",r:"9"}},{tag:"polygon",attr:{points:"24,6 24,33 28,33 28,14 39,17 39,10"}}]}]})(t)}}}]);
+//# sourceMappingURL=b98bc7c3-ad0b96abbf19aecd3f1f.js.map
