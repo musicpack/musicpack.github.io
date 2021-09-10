@@ -1,8 +1,8 @@
 # Music Box Landing Website
-Music Box is a discord streaming bot designed to be easy to use. [(learn more)](https://mbox-contributors.github.io/)
+Music Box is a discord streaming bot designed to be easy to use. [(visit the website)](https://musicpack.github.io/)
 
-This repository stores the source code for the website and is hosted on [GitHub Pages](https://mbox-contributors.github.io/).
-If you were looking for the bot repository, you can find it [here](https://github.com/mbox-contributors/mbox).
+This repository stores the source code for the website and is hosted on [GitHub Pages](https://musicpack.github.io/).
+If you were looking for the bot repository, you can find it [here](https://github.com/musicpack/mbox).
 
 This website is built using [Gatsby](https://www.gatsbyjs.org/).
 
@@ -10,8 +10,8 @@ This website is built using [Gatsby](https://www.gatsbyjs.org/).
 1. Clone the repository
    
    ```shell
-   git clone https://github.com/mbox-contributors/mbox-contributors.github.io.git
-   cd mbox-contributors.github.io.git
+   git clone https://github.com/musicpack/musicpack.github.io.git
+   cd musicpack.github.io
    ```
 
 2. Install dependencies
